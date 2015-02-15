@@ -13,7 +13,7 @@ AStar algoritmo;
 
 /** Configuracion inicial */
 void setup(){
-  size(columnas * tamanioMosaico, renglones * tamanioMosaico);
+  size(columnas * tamanioMosaico, renglones * tamanioMosaico + 70);
   background(50);
   fuente = createFont("Arial",12,true);
   textFont(fuente, 12);
