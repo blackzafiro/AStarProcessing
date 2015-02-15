@@ -94,6 +94,40 @@ void draw(){
       
     }
   }
+  
+  // Información
+  fill(0);
+  rect(0, renglones * tamanioMosaico, columnas *  tamanioMosaico, 70);
+  
+  fill(0,200,0);
+  rect(10, renglones * tamanioMosaico + 10, 20, 20);
+  fill(255);
+  text("Estado inicial", 40, renglones * tamanioMosaico + 30);
+  
+  fill(200,0,0);
+  rect(10, renglones * tamanioMosaico + 30, 20, 20);
+  fill(255);
+  text("Estado final", 40, renglones * tamanioMosaico + 50);
+  
+  fill(0,200,200);
+  rect(2 * tamanioMosaico, renglones * tamanioMosaico + 10, 20, 20);
+  fill(255);
+  text("Lista abierta", 2 * tamanioMosaico + 30, renglones * tamanioMosaico + 30);
+  
+  fill(200,200,0);
+  rect(2 * tamanioMosaico, renglones * tamanioMosaico + 30, 20, 20);
+  fill(255);
+  text("Lista cerrada", 2 * tamanioMosaico + 30, renglones * tamanioMosaico + 50);
+  
+  fill(150,0,150);
+  rect(4 * tamanioMosaico, renglones * tamanioMosaico + 10, 20, 20);
+  fill(255);
+  text("Nodo actual", 4 * tamanioMosaico + 30, renglones * tamanioMosaico + 30);
+  
+  fill(0,0,100);
+  rect(4 * tamanioMosaico, renglones * tamanioMosaico + 30, 20, 20);
+  fill(255);
+  text("Solución", 4 * tamanioMosaico + 30, renglones * tamanioMosaico + 50);
 }
 
 /** Indica que se desea expandir el siguiente nivel. */
